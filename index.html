@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa halcones</title>
+</head>
+<body>
+    <form action="./dynamics/registro.php" method="post">
+        <fieldset>
+            <legend><h2>Registro</h2></legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+            <br><br>
+            <label for="apodo">Apodo</label>
+            <input type="text" name="apodo">
+            <br><br>
+            <label for="casa">Casa</label>
+            <select name="casa" id="casa">
+                <option value="halcon">Halcón</option>
+                <option value="temporingo">Teporingos</option>
+                <option value="ajolote">Ajolote</option>
+            </select>
+            <br><br>
+            <button type="submit">Registrar</button>
+            <button type="reset">Borrar</button>
+        </fieldset>
+    </form>  
+</body>
+</html>
