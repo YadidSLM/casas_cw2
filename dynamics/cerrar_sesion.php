@@ -1,0 +1,10 @@
+<?php
+    session_name("nombre");
+    session_id("12345");
+    session_start();
+    if(isset($_SESSION["nombre"])){
+        session_unset();
+        session_destroy();
+        header("location:../inicio.php");
+    }
+?>
